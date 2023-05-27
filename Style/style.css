@@ -1,0 +1,1197 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.02em;
+}
+body{
+    background: url(../images/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+}
+.CV{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.332);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CV__cuadro{
+    background: rgb(65, 65, 65);
+    width: 1200px;
+    height: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.CV__menu{
+    width: 1180px;
+    height: 60px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+/*SOBRE MI*/
+.CV__section{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .8s;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.CV__section:hover{
+    background-color: rgb(0, 221, 255);
+    color: rgb(0, 0, 0);
+}
+.CV__section--active{
+    background-color: rgb(0, 221, 255);
+    color: rgb(0, 0, 0);
+}
+.CV__Sobre-mi{
+    background-color: rgb(40, 40, 40);
+    width: 1170px;
+    height: 650px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.CV__habilidades{
+    background-color: rgb(40, 40, 40);
+    width: 1170px;
+    height: 650px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.CV__inicio1{
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.CV__foto{
+    width: 250px;
+    height: 270px;
+    margin: 15px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.CV__name{
+    width: 450px;
+}
+.CV__names{
+    font-size: 3.5em;
+    margin: 0 0 20px 0;
+}
+.CV__ocupacion{
+    opacity: .7;
+    font-size: 1.2em;
+    color: aqua;
+}
+.CV_separador{
+    height: 100%;
+    width: 5px;
+    background-color: rgb(202, 202, 202);
+}
+.CV__Sobre-mi-text{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .8;
+    margin: 30px;
+}
+.CV__mis-habilidades{
+    margin:  0 0 0 20px;
+}
+.CV__habilidad-tittle{
+    opacity: 1;
+}
+.CV__barra-habilidad{
+    background-color: rgb(255, 255, 255);
+    width: 370px;
+    border-radius: 30px;
+}
+@keyframes desplazerse1 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 340px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse2 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 330px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse3 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 310px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse4 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 350px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse5 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 320px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse6 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 360px;
+        background-color: #0ee7ff;
+    }
+}
+@keyframes desplazerse7 {
+    0%{
+        width: 0px;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    100%{
+        width: 340px;
+        background-color: #0ee7ff;
+    }
+}
+.CV__barra-h{
+    width: 0PX;
+    transition: 1S;
+}
+.CV__barra-h{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 2px 5px;
+}
+.barra1{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse1;
+}
+.barra2{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse2;
+}
+.barra3{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse3;
+}
+.barra4{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse4;
+}
+.barra5{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse5;
+}
+.barra6{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse6;
+}
+.barra7{
+    border-radius: 30px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: desplazerse7;
+}
+.CV__redes-sociales{
+    list-style: none;
+    margin: 50px 30px 0 30px;
+    display: flex;
+    height: fit-content;
+}
+.CV__red-social{
+    width: 100%;
+    border: 5px solid rgb(108, 108, 108);
+    margin: 0 10px;
+    padding: 10px;
+}
+.CV__link{
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+/*HABILIDADES*/
+.CV__habilidades-r{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.CV__container-p{
+    background: rgb(74, 74, 74);
+    width: 350px;
+    margin: 20px 0 0 0;
+    padding: 0 15px 0 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.scroll-CV{
+    overflow: auto;
+    width: 100%;
+    height: 650px;
+    margin-top: 3px;
+    border-radius: 30px;
+}
+.scroll-CV::-webkit-scrollbar-thumb{
+    background-color: #00e2e6;
+    border-radius: 10px;
+    border: 3px solid #006384;
+}
+.scroll-CV::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+.scroll-CV::-webkit-scrollbar {
+    width: 16px;
+}
+
+.CV__progreso{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(255, 98, 0);
+}
+.CV__progreso-2{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(22, 115, 255);
+}
+.CV__progreso-3{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(130, 130, 0);
+}
+.CV__progreso-4{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(0, 157, 16);
+}
+.CV__progreso-5{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(0, 150, 164);
+}
+
+.CV__progreso-6{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(164, 0, 0);
+}
+.CV__progreso-7{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(1, 77, 135);
+}
+.CV__progreso-8{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(1, 135, 52);
+}
+.CV__progreso-9{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(0, 13, 115);
+}
+.CV__progreso-10{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(107, 0, 115);
+}
+.CV__progreso-11{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 5px solid rgb(17, 143, 0);
+}
+@keyframes conocimiento1 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(205, 79, 0);
+    }
+    100%{
+        width: 100%;
+        height: 135px;
+        background-color: rgba(255, 136, 16, 0.77);
+    }
+}
+@keyframes conocimiento2 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 123, 205);
+    }
+    100%{
+        width: 100%;
+        height: 125px;
+        background-color: rgba(16, 132, 255, 0.77);
+    }
+}
+@keyframes conocimiento3 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(137, 149, 0);
+    }
+    100%{
+        width: 100%;
+        height: 100px;
+        background-color: rgba(171, 180, 0, 0.77);
+    }
+}
+@keyframes conocimiento4 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 96, 35);
+    }
+    100%{
+        width: 100%;
+        height: 98px;
+        background-color: rgba(0, 206, 96, 0.77);
+    }
+}
+@keyframes conocimiento5 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 115, 138);
+    }
+    100%{
+        width: 100%;
+        height: 45px;
+        background-color: rgba(98, 255, 255, 0.77);
+    }
+}
+@keyframes conocimiento6 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(138, 0, 0);
+    }
+    100%{
+        width: 100%;
+        height: 125px;
+        background-color: rgba(255, 41, 41, 0.676);
+    }
+}
+@keyframes conocimiento7 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 39, 138);
+    }
+    100%{
+        width: 100%;
+        height: 65px;
+        background-color: rgba(65, 147, 248, 0.601);
+    }
+}
+@keyframes conocimiento8 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(10, 97, 0);
+    }
+    100%{
+        width: 100%;
+        height: 120px;
+        background-color: rgba(53, 224, 41, 0.745);
+    }
+}
+@keyframes conocimiento9 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 0, 75);
+    }
+    100%{
+        width: 100%;
+        height: 70px;
+        background-color: rgba(80, 129, 210, 0.745);
+    }
+}
+@keyframes conocimiento10 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(75, 0, 74);
+    }
+    100%{
+        width: 100%;
+        height: 100px;
+        background-color: rgba(216, 99, 255, 0.745);
+    }
+}
+@keyframes conocimiento11 {
+    0%{
+        width: 100%;
+        height: 0;
+        background-color: rgb(0, 75, 9);
+    }
+    100%{
+        width: 100%;
+        height: 40px;
+        background-color: rgba(60, 248, 95, 0.745);
+    }
+}
+.CV__progreso-c{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento1;
+    margin-top: auto;
+    position: relative;
+    margin-left: -150px;
+}
+.progreso-2{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento2;
+    margin-top: auto;
+}
+.progreso-3{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento3;
+    margin-top: auto;
+}
+.progreso-4{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento4;
+    margin-top: auto;
+}
+.progreso-5{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento5;
+    margin-top: auto;
+}
+.progreso-6{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento6;
+    margin-top: auto;
+}
+.progreso-7{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento7;
+    margin-top: auto;
+}
+.progreso-8{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento8;
+    margin-top: auto;
+}
+.progreso-9{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento9;
+    margin-top: auto;
+}
+.progreso-10{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento10;
+    margin-top: auto;
+}
+.progreso-11{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-name: conocimiento11;
+    margin-top: auto;
+}
+.CV__imagen-c{
+    width: 70px;
+    height: 90px;
+    margin: 0 40px;
+    position: relative;
+    z-index: 50;
+}
+.CV__name-conoc{
+    font-size: 1.1em;
+    color: #ff8b0e;
+}
+.CV__name-conoc2{
+    font-size: 1.1em;
+    color: #0ebbff;
+}
+.CV__name-porc{
+    font-size: 1em;
+    color: #ff8b0e;
+    opacity: .7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CV__name-porc2{
+    font-size: 1em;
+    color: #0edbff;
+    opacity: .7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.CV__name-conoc3{
+    font-size: 1.1em;
+    color: #a8be01;
+}
+.CV__name-porc3{
+    font-size: 1em;
+    color: #c7dd00;
+    opacity: .7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*HERRAMIENTAS*/
+.space{
+    display: flex;
+    justify-content: space-evenly;
+}
+.CV__herramienta-container{
+    background-color: rgb(75, 75, 75);
+    padding: 0 20px;
+    max-width: 180px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.CV__herramienta-circle{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(63, 255, 245);
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imagen-herramienta{
+    width: 100px;
+}
+/*PROYECTOS*/
+.CV__proyecto-container{
+    background-color: rgb(75, 75, 75);
+    width: 100%;
+    height: 180px;
+    margin: 30px 20px 0 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.CV__imagen-proyecto{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(106, 106, 106);
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+}
+.CV__imagen-proyecto:hover{
+    transform: scale(1.1);
+}
+.CV__imagen-p{
+    width: 130px;
+}
+.cv__p1{
+    color: #00e2e6;
+    font-size: 1.5em;
+    margin: 0 0 15px 0;
+}
+.cv__p2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    opacity: .7;
+}
+.cv__p3{
+    color: #00aaad;
+    opacity: .7;
+    transition: .3s;
+}
+.cv__p3:hover{
+    color: #00e2e6;
+    opacity: .9;
+}
+.cv__e-1{
+    color: #00e2e6;
+    font-size: 1.1em;
+}
+.CV__proyecto-descripcion{
+    width: 600px;
+}
+.redon-img{
+    border-radius: 100%;
+}
+
+.contactoo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.ciontacto-div{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.contacto{
+    width: 100%;
+    height: 400px;
+    margin: 0 25px 10px 25px;
+    border-radius: 30px;
+}
+.contacto-2{
+    border: 5px solid rgb(70, 70, 70);
+    width: 100%;
+    margin: 0px 25px 25px 25px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.contactame-g{
+    margin: 15px;
+}
+.div-c{
+    border: 3px solid rgb(80, 80, 80);
+    margin: 10px;
+}
+.div-sae{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.Correo-s{
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #7c7c7c;
+}
+.link-2{
+    font-size: 1em;
+    line-height: 1.5;
+}
+.cv-hav2{
+    display: none;
+}
+@media (max-width: 1200px) { 
+    body{
+        background: rgb(65, 65, 65);
+    }
+    .CV{
+        width: 100%;
+    }
+    .CV__cuadro{
+        width: 100%;
+        border-radius: 0;
+        height: fit-content;
+        background-color: rgb(40, 40, 40);
+    }
+    .CV__menu{
+        display: none;
+    }
+    .CV__mis-habilidades{
+        display: none;
+    }
+    .CV__Sobre-mi{
+        margin-top: 150px;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .CV__inicio1{
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+    }
+    .cv-hav2{
+        display: block;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+    .CV__Sobre-mi-text{
+        margin: 0 20PX 0px 0;
+        font-size: 1.1em;
+        display: flex;
+        height: 310px;
+        align-items: center;
+    }
+    .CV__redes-sociales{
+        margin:  0;
+        display: flex;
+        width: 100%;
+        flex-wrap: no-wrap;
+    }
+    .CV__red-social{
+        margin: 10px;
+    }
+    .CV__name{
+        text-align: center;
+        width: 100%;
+    }
+    .CV__foto{
+
+        width: 100%;
+    }
+    .CV__habilidades{
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        height: 20%;
+        margin-top: 130px;
+    }
+    .CV__habilidades-r{
+        height: 85vh;
+        margin: 0;
+        padding: 0;  
+    }
+    .CV__habilidades-r::-webkit-scrollbar {
+        width: 10px;
+    };
+}
+@media (max-width: 1050px){
+    .CV__proyecto-container{
+        flex-wrap: wrap;
+        height: fit-content;
+        padding: 10px 5px;
+    }
+    .CV__imagen-proyecto{
+        display: none;
+    }
+    .CV__proyecto-descripcion{
+        width: fit-content;
+        padding: 10px;
+    }
+    .CV__proyecto-usados{
+        width: 100%;
+        padding: 10px;
+    }
+    .ciontacto-div{
+        flex-wrap: wrap;
+    }
+    .Correo-s{
+        font-size: 1em;
+    }
+    .link-2{
+        font-size: 0.8em;
+    }
+    .link-2{
+        width: 100%;
+    }
+    .conteosd-dsd{
+        height: 100vh;
+    }
+}
+@media (max-width: 940px) { 
+    .CV{
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .CV__habilidades-r{
+        height: 100vh;
+        margin: 0;
+        padding: 0;  
+    }
+    .CV__cuadro{
+        width: 100%;
+        border-radius: 0;
+        height: fit-content;
+        background-color: rgb(40, 40, 40);
+    }
+    .CV__menu{
+        display: none;
+    }
+    .CV__mis-habilidades{
+        display: none;
+    }
+    .CV__Sobre-mi{
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .CV__inicio1{
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+    }
+    .cv-hav2{
+        display: block;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+    .CV__Sobre-mi-text{
+        margin: 0 20PX 30px;
+        display: block;
+        height: fit-content;
+    }
+    .CV__redes-sociales{
+        margin: 30px 0;
+        float: none;
+        flex-wrap: wrap;
+    }
+    .CV__red-social{
+        margin: 10px;
+    }
+    .CV__name{
+        text-align: center;
+        width: 100%;
+    }
+    .CV__foto{
+
+        width: 100%;
+    }
+    .link-2{
+        width: 100%;
+    }
+    .conteosd-dsd{
+        height: 100vh;
+    }
+    .contactoo{
+        padding-bottom: 30px;
+        border-radius: 0;
+    }
+}
+@media (max-width: 575px) {
+    .cv-hav2{
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .scroll-CV::-webkit-scrollbar{
+        display: none;
+    }
+    .contactoo{
+        margin-top: 280px;
+    }
+    .CV__names{
+        font-size: 2em;
+    }
+    .CV__barra-habilidad{
+        margin: 15px 0;
+        width: 90%;
+        overflow: hidden;
+    }
+    .CV__Sobre-mi-text{
+        text-align: center;
+    }
+    .contacto-2{
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+    }
+    .contactame-g{
+        width: 150px;
+    }
+    .div-c{
+        display: none;
+    }
+    .div-sae{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .link-2{
+        width: 100%;
+    }
+    .contactoo{
+        margin-top: 390px;
+    }
+}
+@media (max-width: 380px) {
+    .CV__container-p{
+        width: 100%;
+        margin: 10px;
+    }
+    .CV__habilidades-r{
+        height: fit-content;
+        margin: 0;
+        padding: 0;  
+    }
+    span{
+        font-size: 0.8em;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+}
+/*MENU RESPONSIVE*/
+.menu-responsive{
+    position: fixed;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    height: fit-content;
+    border-radius: 0 0 30px 30px;
+    z-index: 100;
+    padding: 10px 0 15px 0;
+}
+.CV__section2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+    margin: 0;
+    padding: 20px 0;
+}
+.CV__section1{
+    border-radius: 30px;
+    margin: 10px 30px;
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 5px;
+}
+.CV__section3{
+    border-radius: 30px;
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 5px 0;
+    margin: 10px 0px;
+}
+.raya-sdsad{
+    border: 3px solid rgb(108, 108, 108);
+    margin: 10px 20px;
+    background-color: rgb(108, 108, 108);
+    width: 100%;
+}
+.CV__section--active2{
+    background-color: #2bcfd2;
+    color: rgb(0, 0, 0);
+}
+.CV__section2{
+    display: none;
+}
+.title--responsive{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+}
+.raya-sdsad-sd{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    height: 30px;
+    border-radius: 30px;
+    margin: 0px 30px;
+    background-color: rgb(31, 31, 31);
+}
+.raya-sdsad-sd:hover{
+    background-color: rgb(62, 62, 62);
+}
+@media (max-width: 1200px){
+    .menu-responsive{
+        display: flex;
+    }
+    
+    .abrirmenu{
+        display: block;
+    }
+    
+}
+
+.mapa-xc{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
